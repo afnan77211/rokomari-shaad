@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="bn">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Rokomari Shaad — Health Food & Pickles</title>
+  <meta name="description" content="Rokomari Shaad - Homemade healthy pickles, achar & preserved foods. Fresh, hygienic and organic taste."/>
+
+  <!-- SEO + Social Preview -->
+  <meta property="og:title" content="Rokomari Shaad — Healthy Pickles & Foods" />
+  <meta property="og:description" content="হোমমেড স্বাস্থ্যকর আচারের স্বাদ — নিরাপদ উপকরণে তৈরি, কোনো কনজার্ভেটিভ ছাড়া।" />
+  <meta property="og:image" content="hero.jpg" />
+  <meta property="og:url" content="https://yourwebsite.com" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.png" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="logo.png" alt="Rokomari Shaad" class="logo">
+        <div>
+          <h1>Rokomari Shaad</h1>
+          <p class="tag">স্বাদ আর ভালোবাসার ঠিকানা — Healthy Pickles & Foods</p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#products">প্রোডাক্ট</a>
+        <a href="#about">আমাদের সম্পর্কে</a>
+        <a href="#contact">যোগাযোগ</a>
+        <a href="#order" class="btn">অর্ডার করুন</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h2>হোমমেড, স্বাস্থ্যসম্মত ও মজাদার আচারের স্বাদ</h2>
+        <p>নিরাপদ উপকরণ, প্রচলিত রেসিপি, এবং ঘরোয়া সুগন্ধ — প্রত্যেক বোতলে ভালোবাসা।</p>
+        <div class="hero-ctas">
+          <a href="#products" class="btn">প্রোডাক্ট দেখুন</a>
+          <a href="#contact" class="btn ghost">যোগাযোগ করুন</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="hero.jpg" alt="Rokomari Shaad Products">
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <main>
+    <section id="products" class="container products">
+      <h2>জনপ্রিয় আইটেম</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="product1.jpg" alt="Beef Pickle">
+          <h3>Beef Pickle (গরুর মাংসের)</h3>
+          <p>মশলা ও ঘরোয়া কাঁচামালের সমন্বয়ে তৈরি। 250g প্যাক।</p>
+          <div class="price">৳ 220</div>
+          <button class="order-btn" data-product="Beef Pickle">অর্ডার করুন</button>
+        </article>
+
+        <article class="card">
+          <img src="product2.jpg" alt="Mango Pickle">
+          <h3>Aam-er Achar (কাচা আম)</h3>
+          <p>ফ্রেশ কাচা আম, হালকা মশলা, দীর্ঘস্থায়ী টেস্ট। 300g</p>
+          <div class="price">৳ 150</div>
+          <button class="order-btn" data-product="Mango Pickle">অর্ডার করুন</button>
+        </article>
+
+        <article class="card">
+          <img src="product3.jpg" alt="Mixed Pickle">
+          <h3>Mixed Pickle</h3>
+          <p>বিভিন্ন সবজি ও ফলের মিশ্র আচারের স্বাদ। 350g</p>
+          <div class="price">৳ 180</div>
+          <button class="order-btn" data-product="Mixed Pickle">অর্ডার করুন</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="container about">
+      <h2>আমাদের সম্পর্কে</h2>
+      <p>Rokomari Shaad একটি হোমবেইজড ফুড ব্র্যান্ড। আমরা স্বাস্থ্যবিধি মানি, কৃত্রিম কনজার্ভেটিভ ব্যবহার করি না এবং প্রতিটি ব্যাচ সতর্কতার সাথে তৈরি করি। আপনার পরিবারের জন্য নিরাপদ ও সুস্বাদু পণ্য গভীর যত্ন নিয়ে বানাই।</p>
+    </section>
+
+    <!-- Order -->
+    <section id="order" class="container order">
+      <h2>দ্রুত অর্ডার করুন</h2>
+      <form id="orderForm">
+        <div class="form-row">
+          <label>আপনার নাম</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="form-row">
+          <label>ফোন / WhatsApp</label>
+          <input type="tel" id="phone" required placeholder="+8801XXXXXXXXX">
+        </div>
+        <div class="form-row">
+          <label>আপনি কি অর্ডার করতে চান?</label>
+          <select id="productSelect">
+            <option>Beef Pickle</option>
+            <option>Mango Pickle</option>
+            <option>Mixed Pickle</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label>মন্তব্য / ঠিকানা</label>
+          <textarea id="note" rows="3"></textarea>
+        </div>
+        <div class="form-row">
+          <button type="submit" class="btn">অর্ডার সাবমিট করুন</button>
+          <button type="button" id="whatsappBtn" class="btn ghost">WhatsApp এ পাঠান</button>
+        </div>
+      </form>
+      <p class="small">অর্ডার সাবমিট করলে আমরা আপনার ফোনে যোগাযোগ করব।</p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="container contact">
+      <h2>যোগাযোগ</h2>
+      <div class="contact-grid">
+        <div>
+          <p><strong>ফেসবুক পেজ:</strong> <a href="https://www.facebook.com/rokomarishaad1" target="_blank">Rokomari Shaad</a></p>
+          <p><strong>ফোন:</strong> <a href="tel:+8801730947333">+8801730947333</a></p>
+          <p><strong>ইমেইল:</strong> <a href="mailto:rokomarishaad@gmail.com">rokomarishaad@gmail.com</a></p>
+        </div>
+        <div>
+          <p><strong>ঠিকানা:</strong> Narayanganj, Bangladesh</p>
+          <div class="socials">
+            <a href="#" aria-label="facebook">FB</a>
+            <a href="#" aria-label="instagram">IG</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Rokomari Shaad. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
